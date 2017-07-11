@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_register"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="0.79"
+        android:gravity="top"
+        android:alpha="0.9"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="142dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            fbutton:srcCompat="@drawable/title" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter email here "
+            app:met_primaryColor="#008e79"
+            app:met_baseColor="#f9f8f1"
+            app:met_errorColor="#f44336"
+            android:maxLength="20"
+            app:met_singleLineEllipsis="true"
+            app:met_minCharacters="0"
+            app:met_maxCharacters="20"
+            android:fontFamily="sans-serif"
+            app:met_textColorHint="@color/hint"
+            android:hint="Full Name"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter email here "
+            app:met_primaryColor="#008e79"
+            app:met_baseColor="#f9f8f1"
+            app:met_errorColor="#f44336"
+            android:maxLength="10"
+            app:met_singleLineEllipsis="true"
+            app:met_minCharacters="0"
+            app:met_maxCharacters="10"
+            android:fontFamily="sans-serif"
+            app:met_textColorHint="@color/hint"
+            android:hint="Email Address"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter password here"
+            app:met_primaryColor="#008e79"
+            app:met_baseColor="#f9f8f1"
+            app:met_errorColor="#f44336"
+            android:maxLength="10"
+            android:inputType="textPassword"
+            app:met_singleLineEllipsis="true"
+            app:met_maxCharacters="10"
+            android:fontFamily="sans-serif"
+            app:met_textColorHint="@color/hint"
+            android:hint="Password"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/primary_button"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            fbutton:buttonColor="@color/fbutton_color_turquoise"
+            fbutton:shadowEnabled="false" />
+
+        <TextView
+            android:id="@+id/register_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint"
+            android:gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:onClick="goLogin"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Already registered ! Login me " />
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
