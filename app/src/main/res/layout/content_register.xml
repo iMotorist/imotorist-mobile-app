@@ -10,19 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
-        android:layout_weight="0.79"
         android:gravity="top"
         android:alpha="0.9"
         android:background="@android:color/transparent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="142dp"
+            android:layout_width="150dp"
             android:layout_height="55dp"
             android:layout_margin="5dp"
             android:layout_gravity="center_horizontal"
-            fbutton:srcCompat="@drawable/title" />
+            fbutton:srcCompat="@drawable/title"
+            android:layout_weight="0.08" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/name"
