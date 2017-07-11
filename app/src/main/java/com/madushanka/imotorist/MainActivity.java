@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     public void goRegister(View v){
         Intent i  = new Intent(this,RegisterActivity.class);
         startActivity(i);
-
+        finish();
     }
 
 
