@@ -64,6 +64,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:text="Login"
+            android:onClick="goHome"
             android:textColor="@android:color/white"
             fbutton:buttonColor="@color/fbutton_color_turquoise"
             fbutton:shadowEnabled="false" />
@@ -102,7 +103,7 @@
             android:textSize="13dp"
             android:textStyle="bold"
             android:clickable="true"
-            android:onClick="goRegister"
+            android:onClick="goPhone"
             android:layout_gravity="center_horizontal"
             android:text="No account yet ? Create one" />
 

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.madushanka.imotorist">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon"
@@ -22,6 +24,13 @@
         <activity
             android:name=".RegisterActivity"
             android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PhoneAuthActivity"
+            android:label="@string/label_phone_auth" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

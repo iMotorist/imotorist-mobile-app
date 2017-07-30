@@ -8,7 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.PhoneAuthProvider;
+
+import java.util.concurrent.TimeUnit;
+
 public class RegisterActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,5 +32,8 @@ public class RegisterActivity extends AppCompatActivity {
         finishAffinity();
 
     }
+
+
+
 
 }

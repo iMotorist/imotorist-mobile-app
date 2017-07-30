@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "529467669060",
+    "firebase_url": "https://imotorist-cc0b1.firebaseio.com",
+    "project_id": "imotorist-cc0b1",
+    "storage_bucket": "imotorist-cc0b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529467669060:android:9fdbaadddf2f8e58",
+        "android_client_info": {
+          "package_name": "com.madushanka.imotorist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529467669060-srmi2te1m5ps3ecb489gk45r29n9l68j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.madushanka.imotorist",
+            "certificate_hash": "e0c3ef18132e133f13fdd458a47594bbf588998e"
+          }
+        },
+        {
+          "client_id": "529467669060-6cm5h5cbjv17lmnvsici3dbfmqt1dmhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsJnvTOx8e9C_acvW62gDgxA0hDw71IS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529467669060-6cm5h5cbjv17lmnvsici3dbfmqt1dmhv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

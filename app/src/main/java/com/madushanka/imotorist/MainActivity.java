@@ -23,10 +23,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void goRegister(View v){
-        Intent i  = new Intent(this,RegisterActivity.class);
+    public void goPhone(View v){
+        Intent i  = new Intent(this,PhoneAuthActivity.class);
         startActivity(i);
-        finish();
+
+
+    }
+
+    public void goHome(View v){
+       Intent i  = new Intent(this,HomeActivity.class);
+       startActivity(i);
+
+
     }
 
 

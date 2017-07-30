@@ -33,7 +33,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             app:met_floatingLabel="highlight"
-            app:met_floatingLabelText="Enter email here "
+            app:met_floatingLabelText="Enter name here "
             app:met_primaryColor="#008e79"
             app:met_baseColor="#f9f8f1"
             app:met_errorColor="#f44336"
@@ -92,23 +92,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:text="Register"
+            android:onClick="goPhone"
             android:textColor="@android:color/white"
             fbutton:buttonColor="@color/fbutton_color_turquoise"
             fbutton:shadowEnabled="false" />
-
-        <TextView
-            android:id="@+id/register_go"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/hint"
-            android:gravity="center_horizontal"
-            android:layout_margin="20dp"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            android:onClick="goLogin"
-            android:clickable="true"
-            android:layout_gravity="center_horizontal"
-            android:text="Already registered ! Login me " />
 
 
     </LinearLayout>
