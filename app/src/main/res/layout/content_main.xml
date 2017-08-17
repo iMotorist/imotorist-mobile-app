@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@drawable/bg">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
         android:layout_weight="0.79"
-        android:gravity="top"
         android:alpha="0.9"
         android:background="@android:color/transparent"
+        android:gravity="top"
         android:orientation="vertical">
 
 
@@ -21,41 +21,41 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelText="Enter username here "
-            app:met_primaryColor="#008e79"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:hint="Email or Phone"
+            android:maxLength="100"
             app:met_baseColor="#f9f8f1"
             app:met_errorColor="#f44336"
-            android:maxLength="10"
-            app:met_singleLineEllipsis="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter Email or Phone "
+            app:met_maxCharacters="100"
             app:met_minCharacters="0"
-            app:met_maxCharacters="10"
-            android:fontFamily="sans-serif"
-            app:met_textColorHint="@color/hint"
-            android:hint="Username"/>
+            app:met_primaryColor="#008e79"
+            app:met_singleLineEllipsis="true"
+            app:met_textColorHint="@color/hint" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelText="Enter password here"
-            app:met_primaryColor="#008e79"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="10"
             app:met_baseColor="#f9f8f1"
             app:met_errorColor="#f44336"
-            android:maxLength="10"
-            android:inputType="textPassword"
-            app:met_singleLineEllipsis="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter password "
             app:met_maxCharacters="10"
-            android:fontFamily="sans-serif"
-            app:met_textColorHint="@color/hint"
-            android:hint="Password"/>
+            app:met_primaryColor="#008e79"
+            app:met_singleLineEllipsis="true"
+            app:met_textColorHint="@color/hint" />
 
         <info.hoang8f.widget.FButton
             android:id="@+id/primary_button"
@@ -63,8 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
-            android:text="Login"
             android:onClick="goHome"
+            android:text="Login"
             android:textColor="@android:color/white"
             fbutton:buttonColor="@color/fbutton_color_turquoise"
             fbutton:shadowEnabled="false" />
@@ -73,13 +73,23 @@
             android:id="@+id/forget_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/hint"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="12dp"
-            android:textSize="13dp"
-            android:textStyle="bold"
             android:layout_gravity="center_horizontal"
-            android:text="Forget password ?" />
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Forget password ?"
+            android:textColor="@color/hint"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progressView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            app:gp_figure_padding="2dp"
+            app:gp_number_of_angles="15" />
 
     </LinearLayout>
 
@@ -88,24 +98,25 @@
         android:layout_height="match_parent"
         android:layout_margin="15dp"
         android:layout_weight="0.79"
-        android:gravity="bottom"
         android:alpha="0.9"
         android:background="@android:color/transparent"
+        android:gravity="bottom"
         android:orientation="vertical">
 
-    <TextView
+
+        <TextView
             android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/hint"
-            android:gravity="center_horizontal"
-            android:layout_margin="17dp"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            android:clickable="true"
-            android:onClick="goPhone"
             android:layout_gravity="center_horizontal"
-            android:text="No account yet ? Create one" />
+            android:layout_margin="17dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:onClick="goPhone"
+            android:text="No account yet ? Create one"
+            android:textColor="@color/hint"
+            android:textSize="13dp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
