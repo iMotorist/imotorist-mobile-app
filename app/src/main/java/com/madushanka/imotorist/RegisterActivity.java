@@ -2,16 +2,9 @@ package com.madushanka.imotorist;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.PhoneAuthProvider;
-
-import java.util.concurrent.TimeUnit;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -26,14 +19,12 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-    public void goLogin(View v){
-        Intent i  = new Intent(this,MainActivity.class);
+    public void goLogin(View v) {
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
         finishAffinity();
 
     }
-
-
 
 
 }

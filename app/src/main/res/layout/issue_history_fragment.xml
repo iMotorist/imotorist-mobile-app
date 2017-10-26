@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_register"
+    android:clickable="true"
+    tools:context="com.madushanka.imotoristofficer.DashBoardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:alpha="0.9"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progressView"
+            android:layout_width="47dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            app:gp_figure_padding="2dp"
+            app:gp_number_of_angles="15" />
+
+
+        <TextView
+            android:id="@+id/ticket_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="Our records indicate that you have not issued any tickets"
+            android:textColor="@color/bg"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_weight="0.96" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

@@ -2,7 +2,7 @@ package com.madushanka.imotorist.network;
 
 import android.support.annotation.Nullable;
 
-import com.madushanka.imotorist.TokenManager;
+import com.madushanka.imotorist.controllers.TokenManager;
 import com.madushanka.imotorist.entities.AccessToken;
 
 import java.io.IOException;

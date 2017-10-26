@@ -3,7 +3,7 @@ package com.madushanka.imotorist.network;
 
 import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.madushanka.imotorist.BuildConfig;
-import com.madushanka.imotorist.TokenManager;
+import com.madushanka.imotorist.controllers.TokenManager;
 
 import java.io.IOException;
 

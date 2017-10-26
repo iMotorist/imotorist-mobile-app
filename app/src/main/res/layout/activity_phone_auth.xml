@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
-    android:background="@color/bg_register"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@color/bg_register">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
-        android:gravity="top"
         android:alpha="0.9"
         android:background="@android:color/transparent"
+        android:gravity="top"
         android:orientation="vertical"
         android:weightSum="1">
 
@@ -20,54 +20,54 @@
             android:id="@+id/imageView"
             android:layout_width="150dp"
             android:layout_height="55dp"
-            android:layout_margin="5dp"
             android:layout_gravity="center_horizontal"
-            fbutton:srcCompat="@drawable/title"
-            android:layout_weight="0.08" />
+            android:layout_margin="5dp"
+            android:layout_weight="0.08"
+            fbutton:srcCompat="@drawable/title_low" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/field_phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelText="Enter Mobile Number "
-            app:met_primaryColor="#008e79"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10"
             app:met_baseColor="#f9f8f1"
             app:met_errorColor="#f44336"
-            android:maxLength="10"
-            app:met_singleLineEllipsis="true"
-            app:met_minCharacters="0"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter Mobile Number "
             app:met_maxCharacters="10"
-            android:inputType="phone"
-            android:fontFamily="sans-serif"
-            app:met_textColorHint="@color/hint"
-            android:hint="Mobile Number"/>
+            app:met_minCharacters="0"
+            app:met_primaryColor="#008e79"
+            app:met_singleLineEllipsis="true"
+            app:met_textColorHint="@color/hint" />
 
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/field_verification_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelText="Enter Verification code "
-            app:met_primaryColor="#008e79"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:hint="Verification Code"
+            android:inputType="phone"
+            android:maxLength="6"
+            android:visibility="gone"
             app:met_baseColor="#f9f8f1"
             app:met_errorColor="#f44336"
-            android:maxLength="6"
-            app:met_singleLineEllipsis="true"
-            app:met_minCharacters="0"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter Verification code "
             app:met_maxCharacters="6"
-            android:inputType="phone"
-            android:fontFamily="sans-serif"
-            android:visibility="gone"
-            app:met_textColorHint="@color/hint"
-            android:hint="Verification Code"/>
+            app:met_minCharacters="0"
+            app:met_primaryColor="#008e79"
+            app:met_singleLineEllipsis="true"
+            app:met_textColorHint="@color/hint" />
 
 
         <info.hoang8f.widget.FButton
@@ -88,8 +88,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:text="Verify Code"
-            android:visibility="gone"
             android:textColor="@android:color/white"
+            android:visibility="gone"
             fbutton:buttonColor="@color/fbutton_color_turquoise"
             fbutton:shadowEnabled="false" />
 
@@ -109,28 +109,28 @@
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/hint"
-            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="Verification code has sent to your mobile number"
+            android:textColor="@color/hint"
             android:textSize="13dp"
             android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
-            android:visibility="gone"
-            android:text="Verification code has sent to your mobile number" />
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/register_go"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/hint"
-            android:gravity="center_horizontal"
-            android:layout_margin="20dp"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            android:onClick="goLoginA"
-            android:clickable="true"
             android:layout_gravity="center_horizontal"
-            android:text="Already registered ! Login me " />
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:onClick="goLoginA"
+            android:text="Already registered ! Login me "
+            android:textColor="@color/hint"
+            android:textSize="13dp"
+            android:textStyle="bold" />
 
         <net.bohush.geometricprogressview.GeometricProgressView
             android:id="@+id/progressView"
@@ -138,8 +138,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            app:gp_figure_padding="2dp"
             android:visibility="gone"
+            app:gp_figure_padding="2dp"
             app:gp_number_of_angles="15" />
 
 

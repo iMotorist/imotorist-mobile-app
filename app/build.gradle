@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '25.0.2'
     defaultConfig {
         applicationId "com.madushanka.imotorist"
         minSdkVersion 16
@@ -28,15 +28,15 @@ dependencies {
 
 
 
+    compile 'com.github.ceryle:FitGridView:v1.0.5'
 
-
-    compile 'com.android.support:support-core-utils:25.4.0'
-    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:support-core-utils:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.1'
-    compile 'com.android.support:design:25.4.0'
+    compile 'com.android.support:design:25.3.1'
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
     compile 'info.hoang8f:fbutton:1.0.5'
-    compile 'com.google.firebase:firebase-auth:11.0.2'
+    compile 'com.google.firebase:firebase-auth:11.4.2'
     compile 'net.bohush.geometricprogressview:geometricprogressview:1.1.1'
     compile 'com.android.support:support-v4:25.3.1'
     testCompile 'junit:junit:4.12'
@@ -48,6 +48,15 @@ dependencies {
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
     compile 'com.facebook.stetho:stetho:1.5.0'
     compile 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+
+
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.google.firebase:firebase-core:11.4.2'
+    compile 'com.google.firebase:firebase-messaging:11.4.2'
+
+    compile 'com.yarolegovich:lovely-dialog:1.0.7'
+    compile 'ru.alexbykov:nopermission:1.1.0'
+
 }
 
 

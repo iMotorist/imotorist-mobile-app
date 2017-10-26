@@ -4,9 +4,10 @@
     xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    android:background="@color/bg_register">
 
     <LinearLayout
+        android:id="@+id/login_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
@@ -90,6 +91,15 @@
             android:visibility="invisible"
             app:gp_figure_padding="2dp"
             app:gp_number_of_angles="15" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:layout_weight="0.08"
+            fbutton:srcCompat="@drawable/title_low" />
 
     </LinearLayout>
 
