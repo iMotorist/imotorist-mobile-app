@@ -32,7 +32,7 @@ import retrofit2.Response;
 
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
-    private static final String TAG = "MyFirebaseIIDService";
+    private static final String TAG = "MyFirebaseIDService";
     Call<String> firebase_call;
     ApiService authService;
     TokenManager tokenManager;

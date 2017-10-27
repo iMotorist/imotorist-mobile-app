@@ -100,7 +100,7 @@ public class HomeActivity extends AppCompatActivity
 
         if (count == 0) {
             super.onBackPressed();
-            mAuth.signOut();
+            //mAuth.signOut();
 
         } else {
 
@@ -109,7 +109,7 @@ public class HomeActivity extends AppCompatActivity
 
             if (homefragment != null && homefragment.isVisible()) {
                 super.onBackPressed();
-                mAuth.signOut();
+                //mAuth.signOut();
             }
 
             getFragmentManager().popBackStack();
@@ -120,7 +120,7 @@ public class HomeActivity extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
-            mAuth.signOut();
+            // mAuth.signOut();
         }
     }
 

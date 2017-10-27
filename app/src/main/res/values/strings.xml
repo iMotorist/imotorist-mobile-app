@@ -84,4 +84,18 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="currency">LKR </string>
+
+    <string name="amex">American Express</string>
+    <string name="hipercard">Hipercard</string>
+    <string name="redecardcredito">Master Card</string>
+    <string name="visacredito">Visa Card</string>
+    <string name="visaelectron">Visa Electron</string>
+
+    <string name="label_owner">Owner Name</string>
+    <string name="valid_thru">Valid thru</string>
+
+
 </resources>

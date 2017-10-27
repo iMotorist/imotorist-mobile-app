@@ -35,10 +35,10 @@ public class AllTicketAdapter extends RecyclerView.Adapter<AllTicketAdapter.Recy
         holder.ticket_no.setText(arrayList.get(i).getTicket_no());
 
         if (arrayList.get(i).isPaid()) {
-            holder.ticket_status.setText("Paid   ");
+            holder.ticket_status.setText("PAID");
             holder.ticket_status.setTextColor(context.getResources().getColor(R.color.bg));
         } else {
-            holder.ticket_status.setText("Unpaid");
+            holder.ticket_status.setText("UNPAID");
             holder.ticket_status.setTextColor(context.getResources().getColor(R.color.fbutton_color_alizarin));
         }
 

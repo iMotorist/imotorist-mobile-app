@@ -1,9 +1,11 @@
 package com.madushanka.imotorist;
 
 
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -94,7 +96,10 @@ public class TicketFragment extends Fragment {
         pay_ticket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // showPayment();
+                Intent i = new Intent(getActivity(), CreditCardFragmentActivity.class);
+                i.putExtra("amount", t.getTotal_amount());
+                startActivity(i);
 
             }
         });
@@ -112,4 +117,15 @@ public class TicketFragment extends Fragment {
         this.t = t;
     }
 
+
+    public void showPayment() {
+
+        PaymentFragment fragment = new PaymentFragment();
+        fragment.setAmount(Double.parseDouble(t.getTotal_amount()));
+        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+        // getActivity().getSupportFragmentManager().popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        ft.replace(R.id.main_view, fragment, "payment");
+        ft.addToBackStack("payment");
+        ft.commit();
+    }
 }

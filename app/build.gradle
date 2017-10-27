@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    buildToolsVersion '25.0.3'
     defaultConfig {
         applicationId "com.madushanka.imotorist"
         minSdkVersion 16
@@ -32,7 +32,7 @@ dependencies {
 
     compile 'com.android.support:support-core-utils:25.3.1'
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:25.3.1'
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
     compile 'info.hoang8f:fbutton:1.0.5'
@@ -56,6 +56,9 @@ dependencies {
 
     compile 'com.yarolegovich:lovely-dialog:1.0.7'
     compile 'ru.alexbykov:nopermission:1.1.0'
+
+    compile 'com.craftman.cardform:cardform:0.0.2'
+    compile 'com.movile:creditcardguide:1.2-beta'
 
 }
 
